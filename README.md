@@ -8,6 +8,7 @@ This is a blog application implemented using MongoDB, Express, React, and Node.j
 cd backend
 npm install mongodb
 npm install dotenv
+npm install express cors
 ```
 
 ## Security Considerations
