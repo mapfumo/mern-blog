@@ -1,5 +1,7 @@
 # MEARN Blog
 
+This is a blog application implemented using MongoDB, Express, React, and Node.js. There are also seperate readme files for the frontend and backend.
+
 ## Backend Setup
 
 ```bash
