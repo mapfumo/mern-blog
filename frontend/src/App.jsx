@@ -9,16 +9,17 @@ import { Landing } from "./pages/Landing";
 import { Profile } from "./pages/Profile";
 import { ReadBlog } from "./pages/ReadBlog";
 import { Layout } from "./components/Layout";
+import { useEffect } from "react";
+import axios from "axios";
 
 function App() {
-  // PAGES
-  // Landing Page
-  // Home Page (filtered by recency)
-  // ReadBlog Page
-  // CreateBlog Page
-  // Profile Page (users can see their posts, etc)
-  // About
-  // Contact
+  // to cater for page refreshes
+  useEffect(() => {
+    const token = sessionStorage.getItem("User");
+    if (token) {
+      axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+    }
+  }, []);
 
   return (
     <Router>

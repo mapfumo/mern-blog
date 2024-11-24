@@ -10,6 +10,7 @@ npm install mongodb
 npm install dotenv
 npm install express cors
 npm install bcrypt
+npm install jsonwebtoken
 ```
 
 ## Frontend Setup
